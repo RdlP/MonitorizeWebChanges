@@ -73,9 +73,9 @@ class MyHTMLParser(HTMLParser):
         self.isA = False
         self.isFrame = False
     
-    def showNotifyUnix(self, offer):
+    def showNotifyUnix(self, text):
         n = pynotify.Notification("<b>ha actualizado</b>",
-        offer
+        text
         )
         n.show()
         
